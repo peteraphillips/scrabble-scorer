@@ -1,11 +1,12 @@
-const Tile = (letter) => {
+const Tile = (props) => {
 
     var tile = 
-    <div className="tile-container">
+    <div className="tile-container" on>
         <div className="tile">
-            {letter.letter}
+            {props.letter}
         </div>
     </div>    
+    
     return (
         tile
     )

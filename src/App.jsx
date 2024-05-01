@@ -1,18 +1,13 @@
 import { useState, useEffect } from 'react'
-import Tile from './components/tile'
+import { useDrag } from 'react-dnd'
 import './App.css'
+import Board from './components/board'
 
 function App() {
 
-  const useMousePosition = () => {
-    const [mousePosition, setMousePosition] = useState({x: null, y: null})
-  }
-
   return (
     <>
-      <div>
-        <Tile letter='A' />
-      </div>
+      <Board tilePosition={[0, 0]} />
     </>
   )
 }

@@ -1,11 +1,14 @@
 const Square = ({ children }) => {
 
-    return (
-        <div className="square">
+     return (
+        {children}
+        ? <div className="square">
 
             {children}
         </div>
+        : null
     )
+    
 }
 
 export default Square

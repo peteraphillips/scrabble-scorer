@@ -7,11 +7,15 @@ import Square from './components/square'
 
 function App() {
 
+  //  states
   const [playedTile, setPlayedTile] = useState('')
   const [tiles, setTiles] = useState([])
+
+  // ** TODO: change this to an object which contains the score of each tile
   const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
 
+  // handle event when a tile from the selector is clicked to update state
   const handleClickTile = (event) => {
     event.preventDefault()
 
